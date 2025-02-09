@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Carrinho de Compras</h1>
+        <nav>
+            <a href="index.html">Voltar para os Produtos</a>
+        </nav>
+    </header>
+
+    <section id="itensCarrinho">
+        <h2>Itens no Carrinho</h2>
+        <p id="carrinhoVazio">Seu carrinho está vazio.</p>
+        <ul id="listaCarrinho"></ul>
+        <p><strong>Total: R$ <span id="totalCarrinho">0,00</span></strong></p>
+    </section>
+
+    <div class="pagamento-container">
+        <h2>Formas de Pagamento</h2>
+        <ul id="lista-pagamento">
+            <li>💳 Cartão de Crédito</li>
+            <li>💰 Boleto Bancário</li>
+            <li>🏦 Transferência Bancária</li>
+            <li>📱 PIX</li>
+            <li>  pagamento em especie</li>
+        </ul>
+        <br>
+        <button onclick="adicionarMetodo()">Adicionar Método</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
